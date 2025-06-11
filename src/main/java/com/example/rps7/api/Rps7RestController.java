@@ -36,6 +36,7 @@ public class Rps7RestController {
         initLoseMap();
     }
 
+    // プレイヤーの手を0~6の整数で受け取る
     @PostMapping
     public Map<String, Object> play(@RequestParam("hand") int hand) {
 
